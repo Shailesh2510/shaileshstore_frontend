@@ -1,0 +1,100 @@
+.order-history-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .order-history-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .order-history-container .order-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .order-history-container .order-item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .order-history-container .order-item p {
+    margin-bottom: 5px;
+  }
+  
+  .order-history-container .order-item img {
+    max-width: 40%;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .order-history-container .order-item .remove-order-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ff4f4f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-history-container .order-item .remove-order-btn:hover {
+    background-color: #d63e3e;
+  }
+  
+  @media (max-width: 768px) {
+    .order-history-container {
+      padding: 10px;
+    }
+  
+    .order-history-container h1 {
+      font-size: 20px;
+    }
+  
+    .order-history-container .order-item h2 {
+      font-size: 18px;
+    }
+  
+    .order-history-container .order-item p {
+      font-size: 14px;
+    }
+  
+    .order-history-container .order-item img {
+      max-width: 40%;
+    }
+    
+    .order-history-container .order-item img:hover {
+      transform: scale(1.1);
+    }
+  }
+  .order-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .order-not-found p {
+    margin-bottom: 10px;
+  }
+  
+  .order-not-found .redirect-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .order-not-found .redirect-btn:hover {
+    background-color: #0056b3;
+  }
