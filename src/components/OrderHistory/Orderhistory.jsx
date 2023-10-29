@@ -13,7 +13,7 @@ const OrderHistory = () => {
 
   const fetchOrderHistory = async () => {
     try {
-      const response = await axios.get('http://localhost:1337/api/orders');
+      const response = await axios.get('https://strapi-tbux.onrender.com/api/orders');
       setOrders(response.data.data);
     } catch (error) {
       console.error(error);
@@ -22,7 +22,7 @@ const OrderHistory = () => {
 
   const removeOrder = async (orderId) => {
     try {
-      await axios.delete(`http://localhost:1337/api/orders/${orderId}`);
+      await axios.delete(`https://strapi-tbux.onrender.com/api/orders/${orderId}`);
       fetchOrderHistory();
     } catch (error) {
       console.error(error);
