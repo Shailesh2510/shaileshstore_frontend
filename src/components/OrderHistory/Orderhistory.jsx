@@ -56,7 +56,7 @@ const OrderHistory = () => {
                     product.attributes.img.data[0].attributes &&
                     product.attributes.img.data[0].attributes.url && (
                       <img
-                        src={`http://localhost:1337${product.attributes.img.data[0].attributes.url}`}
+                        src={`https://strapi-tbux.onrender.com${product.attributes.img.data[0].attributes.url}`}
                         alt="Product"
                       />
                     )}
